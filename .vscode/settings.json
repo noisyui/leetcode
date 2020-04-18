@@ -1,0 +1,9 @@
+{
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "vector": "cpp",
+        "unordered_map": "cpp",
+        "algorithm": "cpp",
+        "filesystem": "cpp"
+    }
+}
