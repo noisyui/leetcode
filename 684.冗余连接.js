@@ -78,7 +78,7 @@ var findRedundantConnection = function(edges) {
 
 const find = (parent, index) => {
     if (parent[index] !== index) {
-        parent[index] = find(parent, parent[index]);
+        parent[index] = find(parent, parent[index]); // recursive
     }
     return parent[index];
 };

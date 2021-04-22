@@ -36,8 +36,20 @@
  * @param {number} n
  * @return {number}
  */
-var integerBreak = function(n) {
-
+var integerBreak = function (n) {
+    if (n === 2) return 1;
+    if (n === 3) return 2;
+    let ans;
+    let exp = Math.floor(n / 3);
+    let mod = n % 3;
+    if (mod === 0) {
+        ans = Math.pow(3, exp);
+    } else if (mod === 1) {
+        ans = Math.pow(3, exp - 1) * 4;
+    } else if (mod === 2) {
+        ans = Math.pow(3, exp) * 2;
+    }
+    return ans;
 };
 // @lc code=end
 
